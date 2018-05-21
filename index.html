@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>trello</title>
+
+</head>
+<body>
+	<header>
+		<nav id="main-nav">
+			<div id="to-navigate-bar" class="menu-left">
+				<button type="submit" id="boards" class="btn-boards"><i class="fab fa-trello">Trello</i></button>
+				<form class="input-nav-header">
+					<input type="" name=""><i class="fas fa-search"></i>
+
+				</form>
+				<div id="logo">
+						 <img src="https://raulsolbes.files.wordpress.com/2017/04/trello.png?w=1400&h=400&crop=1" alt="trello">
+				</div>
+			</div>
+
+		  <select class="options" name="">
+		          <option value="tablero">Crear nuevo tablero</option>
+		          <option value="equipo">Crear equipo</option>
+		          <option value="negocio">Crear equipo de negocio</option>
+		          <option value="mas">Mas</option>
+		        </select>
+			<div  id="to-navigate-bar" class="menu-right">
+				<button class="btn-main"><i class="fas fa-plus"></i></button>
+				<button class="btn-main"><i class="fas fa-info"></i></button>
+				<button class="btn-main"><i class="far fa-bell"></i></button>
+				<button class="btn-main profile"><i class="far fa-user"></i></button>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<nav id="intern-nav">
+			<div class="intern-menu-left">
+				<button class="intern-btn"><strong>Tablero</strong></button>
+				<button class="intern-btn"><i class="far fa-star"></i></button>
+				<button class="intern-btn">Personal</button>
+				<button class="intern-btn"><i class="fas fa-briefcase"></i>Privacidad</button>
+			</div>
+			<div class="intern-menu-right">
+				<button class="intern-btn"><i class="fas fa-ellipsis-h"></i>Menu</button>
+			</div>
+		</nav>
+		<div class="card-container">
+			<h2>Titulo</h2>
+			<span class="temp-add-list">Agraga una tarea..</span>
+			<form class="add-list-form">
+				<input type="text" name="list-title" placeholder="Add a list.." id="input-list" autofocus>
+				<div class="btn-list-actions">
+					<button type='button' value="" class="save">Guardar</button>
+					<button class="cancel">&times</button>
+				</div>
+			</form>
+			<div id="add-task-container">
+				<span class="temp-add-task">Agrega una tarea..</span>
+				<form class="add-task-form">
+					<textarea rows="8" cols="50" autofocus="" id="input-task"></textarea>
+					<div class="btn-task-actions">
+						<button type="button" value="" class="add-button">Agrega una tarea</button>
+						<button class="cancel">&times</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<script type="text/javascript" src="js/apps.js"></script>
+</body>
+</html>
